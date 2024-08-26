@@ -7,6 +7,7 @@ import (
 	"github.com/Aman-Shetty/Basic-CRM-Tool/lead"
 	"github.com/gofiber/fiber"
 	"github.com/jinzhu/gorm"
+	_ "github.com/jinzhu/gorm/dialects/sqlite"
 )
 
 func setupRoutes(app *fiber.App) {

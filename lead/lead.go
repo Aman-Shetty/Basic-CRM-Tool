@@ -10,10 +10,10 @@ import (
 // The structure of the data to be stored on the database.
 type Lead struct {
 	gorm.Model
-	Name    string
-	Company string
-	Email   string
-	Phone   int
+	Name    string `json:"name"`
+	Company string `json:"company"`
+	Email   string `json:"email"`
+	Phone   int    `json:"phone"`
 }
 
 // Function returns all the values
